@@ -223,7 +223,7 @@ URL: https://flowbite.com/docs/components/typography/
                 <h1 class=" underline underline-offset-4 mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Leetcode 23. Merge k Sorted Lists   </h1>
                 <h1 class="mb-4 text-1xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">First Solution:</h1>
                 <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;"> Method:</span> Merge Sort</h3>
-                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Time Complexity:</span>  O(N log k), where N is the total number of nodes in all linked lists and k is the number of linked lists </h3>
+                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Time Complexity:</span>   O(n) where n is the total number of nodes in all the input lists combined. This is because the code iterates over each node in each list exactly once, and performs a constant amount of work for each node. </h3>
                 <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Space Complexity :</span>O(k), where k is the number of linked lists. This is because the code creates a new node for each merged node, which adds up to a total of k nodes.</h3>
             </header>
       
@@ -316,7 +316,7 @@ URL: https://flowbite.com/docs/components/typography/
             <p class="pt-3" >The  first for loop iterates through the whole array </p>
 
 
-            <p class="pt-3" >The  second for loop value is set to `i` and it iterates through the whole array </p>
+            <p class="pt-3" >The  second for loop value is set to `j`= i and it iterates through the whole array </p>
             <p class="pt-3" >The `min` variable is declared and its value is set to infinity, It is set to infinity because  if `min` nitialized to a value that is lower than any element in the subarray, the result may not be correct.</p>
             <p class="pt-3" >The third for loop is k is set to the value of `j`. It increases if the value is lower than j. This is because if the next value is lower than the current value it can continue and get the biggest area.</p>
             <p class="mt-3">It then gets the lowest value between min and `heights[k]. min is used to keep track of the minimum height in the current subarray being considered.</p>
