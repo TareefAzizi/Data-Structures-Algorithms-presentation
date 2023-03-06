@@ -27,7 +27,7 @@
     <div id="links">
         <a href="#skills">Introduction</a>
         <a href="#work" style="margin:0px 60px;">Basics</a>
-        <a href="#contact">Solution</a>
+        <a href="#solution">Solution</a>
     </div>
     </div>
 
@@ -36,7 +36,7 @@
         <div id="tagline" class="animated zoomIn" style="animation-delay:1.8s;">
             Leetcode's Problem explanation <br>
         
-            <button class="btn_one"> <p><i class="fab fa-github"></i>By: Tareef Iman</p></button>
+            <button class="btn_one"> <p><i class="fab fa-github"></i> Tareef</p></button>
         </div>
     </div>
     </center>
@@ -111,33 +111,29 @@
                  <h1>Basics.</h1>
 
                  <div class="project">
-                 <div><h2>Things to Know Before Solving Algorithm Questions</h2>
-                    <ul>
-                      <li>Basic programming concepts and syntax</li>
-                      <li>Data structures: arrays, linked lists, stacks, queues, trees, graphs</li>
-                      <li>Common algorithms: searching, sorting, hashing, dynamic programming, greedy algorithms</li>
-                      <li>Time and space complexity analysis</li>
-                      <li>Problem solving strategies: divide and conquer, backtracking, recursion, dynamic programming, etc.</li>
-                    </ul>
-                less
-                Copy code
-                <h2>Time and Space Complexity Analysis</h2>
-                <p>Time complexity refers to the amount of time an algorithm takes to complete as the size of the input data increases. It is usually denoted by the big O notation (O(n)), where n is the size of the input. The following are some common time complexities:</p>
-                <ul>
-                  <li>O(1) - Constant Time: An algorithm that takes the same amount of time to complete regardless of the input size. Examples include accessing an array element or performing a single arithmetic operation.</li>
-                  <li>O(log n) - Logarithmic Time: An algorithm that takes time proportional to the logarithm of the input size. Examples include binary search or searching in a balanced binary search tree.</li>
-                  <li>O(n) - Linear Time: An algorithm that takes time proportional to the input size. Examples include linear search or traversing an array.</li>
-                  <li>O(n log n) - Linearithmic Time: An algorithm that takes time proportional to n times the logarithm of n. Examples include sorting algorithms like merge sort and quicksort.</li>
-                  <li>O(n^2) - Quadratic Time: An algorithm that takes time proportional to the square of the input size. Examples include bubble sort and selection sort.</li>
-                  <li>O(2^n) - Exponential Time: An algorithm that takes time proportional to 2 raised to the power of the input size. Examples include the brute force solution to the traveling salesman problem.</li>
-                </ul>
-                <p>Space complexity refers to the amount of memory space an algorithm takes up as the size of the input data increases. It is also denoted by the big O notation (O(n)), where n is the size of the input. The following are some common space complexities:</p>
-                <ul>
-                  <li>O(1) - Constant Space: An algorithm that takes up a fixed amount of memory regardless of the input size. Examples include swapping two variables or reversing an array in place.</li>
-                  <li>O(n) - Linear Space: An algorithm that takes up space proportional to the input size. Examples include creating a new array to store the result of an operation on the input array.</li>
-                  <li>O(n^2) - Quadratic Space: An algorithm that takes up space proportional to the square of the input size. Examples include creating a 2D array to store the result of a matrix multiplication.</li>
-                </ul></div>
-                 <button class="btn_one">visit project</button>
+                    <div class="max-w-5xl mx-auto py-8">
+                        <h2 class="text-3xl font-bold mb-4">Time and Space Complexity</h2>
+                        <p class="mb-4">When analyzing algorithms, we often look at two important factors: time complexity and space complexity. These factors help us understand how efficient an algorithm is and how it will perform as the input size grows. </p>
+                        <h3 class="text-xl font-bold mb-2">Time Complexity</h3>
+                        <p class="mb-4">Time complexity refers to the amount of time an algorithm takes to complete as the size of the input data increases. It is usually denoted by the big O notation (O(n)), where n is the size of the input. Here are some common time complexities:</p>
+                        <ul class="list-disc pl-6 mb-8">
+                          <li class="mb-2">O(1) - Constant Time: An algorithm that takes the same amount of time to complete regardless of the input size.</li>
+                          <li class="mb-2">O(log n) - Logarithmic Time: An algorithm that takes time proportional to the logarithm of the input size.</li>
+                          <li class="mb-2">O(n) - Linear Time: An algorithm that takes time proportional to the input size.</li>
+                          <li class="mb-2">O(n log n) - Linearithmic Time: An algorithm that takes time proportional to n times the logarithm of n.</li>
+                          <li class="mb-2">O(n^2) - Quadratic Time: An algorithm that takes time proportional to the square of the input size.</li>
+                          <li class="mb-2">O(2^n) - Exponential Time: An algorithm that takes time proportional to 2 raised to the power of the input size.</li>
+                        </ul>
+                        <h3 class="text-xl font-bold mb-2">Space Complexity</h3>
+                        <p class="mb-4">Space complexity refers to the amount of memory space an algorithm takes up as the size of the input data increases. It is also denoted by the big O notation (O(n)), where n is the size of the input. Here are some common space complexities:</p>
+                        <ul class="list-disc pl-6">
+                          <li class="mb-2">O(1) - Constant Space: An algorithm that takes up a fixed amount of memory regardless of the input size.</li>
+                          <li class="mb-2">O(n) - Linear Space: An algorithm that takes up space proportional to the input size.</li>
+                          <li class="mb-2">O(n^2) - Quadratic Space: An algorithm that takes up space proportional to the square of the input size.</li>
+                        </ul>
+                      </div>
+                      
+                      
                 </div>
 
              </div>
@@ -148,7 +144,7 @@ Install the "flowbite-typography" NPM package to apply styles and format the art
 URL: https://flowbite.com/docs/components/typography/ 
 -->
 
-<h2 class="mb-4 text-4xl tracking-tight font-extrabold " style="color: #ff124f;">My Solutions</h2>
+<h2 class="mb-4 text-4xl tracking-tight font-extrabold " style="color: #ff124f;" id="solution">My Solutions</h2>
 
 <main class="pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
     <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
@@ -168,10 +164,11 @@ URL: https://flowbite.com/docs/components/typography/
             <h2>The brute force method. Brute force is a simple and straightforward method for solving problems by trying all possible solutions until a satisfactory one is found. It's like trying every single combination of a lock until you find the correct one</h2>
             <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
             <p class="mt-1">The function takes in two parameters which is nums and k.</p>
-            <p class="pt-3" >The second line is the if statement of how many k there is, if   `k = 1` it will return the whole nums since the window size is only one.</p>
-            <p class="mt-3">The first for loop iterates through all the elements of the array until the last 3</p>
-            <p class="mt-3">An Empty Array is declared to store the Max of the window.</p>
-            <p class="mt-3">The second for loop iterated through i + 1, and increases if the value of j is less the value of `i + k`. This is to ensure that J gets the values ahead of `I`</p>
+            <p class="pt-3" >An empty array is declared to store the max values of each window.</p>
+            <p class="mt-3">The first for loop iterates through all the elements of the array until the last 3 which is k in this example. This is because if it does not stop at the last 3 elements  it will return undefined since it goes out of the k length.</p>
+            <p class="mt-3">A variable name max is made it, stores all the current iterations in nums</p>
+            <p class="mt-3">The second for loop iterated through is j = i  + 1, and it will increase if the value of j is less than the value of `i + k`. This is to ensure that J gets the values ahead of i by k value . In this instance for example i will be at 1 and j will be at two numbers ahead which are 3 and -1. This is to get all the values in k=3.</p>
+            <p class="mt-3">If the value of j is bigger than the value of max , max will be replaced by the value of j </p>
             <p class="mt-3">The Final Answer of this code is <span style="color:#ff00a0">[ 3, 3, 5, 5, 6, 7 ]</span></p>
             <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3>
            
@@ -202,13 +199,14 @@ URL: https://flowbite.com/docs/components/typography/
 
                 <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
                 <p class="mt-1">The function takes in two parameters which is nums and k.</p>
-                <p class="pt-3" > A Variable `q` stores the index number to keep track of the sliding window. `Res` is used to sture the results of the Maximum in the Sliding Window </p>
+                <p class="pt-3" > A Variable `q` stores the index number to keep track of the sliding window.  </p>
+                <p class="mt-3">`Res` is used to store the results of the Maximum in the Sliding Window</p>
                 <p class="mt-3">The first for loop iterates through all the elements of the array</p>
-                <p class="mt-3">The while loop checks if `q` is not empty and the last element of q is not bigger than or equal to the current index of `nums[i]`, If it is small the last element of `q` is then removed</p>
+                <p class="mt-3">The while loop checks if `q` is not empty and the last element of q is not bigger than or equal to the current index of `nums[i]`, If it is true, the last element of `q` is then removed. For example, if the next number is biggest than or equal to the current number, the current number is no longer the biggest number in the sliding window.</p>
                 <p class="mt-3">The current index `i` is then pushed into Q</p>
-                <p class="mt-3">The if Statement Checks if the first items in `q` is equal to`i - k`. If it is equal, then the first element is removed with shift. The if statement checks if the first element in q (which stores indices) is outside the current window</p>
-                <p class="mt-3">the if statement checks the current index is bigger then or equal to  k. If it is push the first element of the first index of `q` into results. The if statement checks if the current window has k elements. If it does, it means that the window is full and we can add the maximum element</p>
-
+                <p class="mt-3">The if Statement Checks if the first items in `q` which is q[0] are equal to`i - k`. If it is equal, then the first element is removed with shift(). Shift() removes  the first element in the array. This if statement checks whether the first element in q corresponds to an element outside the current window. If this is the case, we need to remove the first element in q, because it no longer corresponds to an element in the current window.</p>
+                <p class="mt-3">The second if statement checks if the current index is bigger than or equal to k - i. The reason for subtracting 1 from k in the if statement is because of the zero-based indexing.  If it is push the first element of the first index of `q` into res. If i is greater than or equal to k - 1, then it means that the current window has k elements, and we can add the maximum element of the window to the res array.</p>
+           
                 <p class="mt-3">The Final Answer of this code is <span style="color:#ff00a0">[ 3, 3, 5, 5, 6, 7 ]</span></p>
                 <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3>
                
@@ -217,7 +215,86 @@ URL: https://flowbite.com/docs/components/typography/
             </div>
   </main>
 
+  <main class=" mt-7 pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
+    <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+        <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+            <header class="mb-4 lg:mb-6 not-format">
   
+                <h1 class=" underline underline-offset-4 mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Leetcode 23. Merge k Sorted Lists   </h1>
+                <h1 class="mb-4 text-1xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">First Solution:</h1>
+                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;"> Method:</span> Merge Sort</h3>
+                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Time Complexity:</span>  O(N log k), where N is the total number of nodes in all linked lists and k is the number of linked lists </h3>
+                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Space Complexity :</span>O(k), where k is the number of linked lists. This is because the code creates a new node for each merged node, which adds up to a total of k nodes.</h3>
+            </header>
+      
+            <figure><img src="mergeklistssolution1.png" alt="">
+                <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Method Explanation:</span> </h3>
+            </figure>
+            <h2>Merge sort is a divide-and-conquer algorithm that sorts an array by dividing it into two halves, sorting each half recursively, and then merging the two sorted halves into one sorted array.</h2>
+            <img class="w-full max-h-fit hidden dark:block" src="mergesort.gif" alt="dashboard image">
+           
+            <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
+            <p class="mt-2">We  make a function called mergeKlists that takes in `lists` as its parameter.</p>
+            <p class="mt-2">A variable called `previous` is assigned to a value which is null. This is to keep track of the merged linked list</p>
+            <p class="mt-2">Then a for loop is declared to loop through the merged linked lists.</p>
+            <p class="mt-2">For each linked lists we call the function `mergeTwolists` passing in the previous linked list and the current linked list as the argument</p>
+            <p class="mt-2">After merging all the linked lists we return previous.</p>
+            <p class="mt-3">Now we take the `mergeTwoLists` function that takes in two linked lists. `list1` and `list2,</p>
+            <p class="mt-2">Then we create ListNode with a value of 0. This will act as a sentinel node and the tail node since both are assigned to the same values, which is a common technique used when working with linked lists. Sentinel is used to keep track of the head of the merged linked list, while tail is used to keep track of the end of the merged linked list. When we merge two linked lists, we need to keep track of the end of the merged list so that we can add new nodes to the end as we iterate through the two lists. We update it with each iteration of the while loop using tail = tail.next. This ensures that we always add new nodes to the end of the new linked list.</p>
+            <p class="mt-2">After that we declare a while loop to iterate through both lists and add nodes to the new linked lists in the correct order. This while loop runs as long as both list1 and list2 have nodes that haven't been added to the new list yet.</p>
+            <p class="mt-2">Inside the loop, we check which of the two lists has the smaller first value with the variable called canAddl1. We do this by comparing the .val property of the first node in each list.</p>
+            <p class="mt-2">Then the first `If statement` checks if  list1 has the smaller value (or if the two values are equal), we add the first node from list1 to the new list and advance the pointer for list1 to the next node.</p>
+            <p class="mt-2">Then the  `else statement` returns if list2 has the bigger value, we add the first node from list2 to the new list and advance the pointer for list2 to the next node.</p>
+            <p class="mt-2">After adding a node to the new list, we advance the pointer for the tail to the next node in the new list. That is the  point of tail = tail.next is to update the tail variable to point to the last node in the newly merged linked list after each iteration of the while loop.            </p>
+            <p class="mt-2">Once the loop is finished. This operation adds the remaining nodes in either list1 or list2 (if any) to the end of the new merged linked list. After all the nodes have been merged and added to the new linked list, the code return sentinel.next returns a reference to the first node in the new merged list. This will return the values in the newly sorted linked list in incrementing order.</p>
+           <p class="mt-2">Then we return the new linked list</p>
+           
+            <p class="mt-3"> The Final Answer of this code is <span style="color:#ff00a0">1->1->2->3->4->4->5->6
+            </span></p>
+            <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3> -->
+                <p class="mt-3"><span style="color:#ff00a0">No visualization because leetcode uses array as its linked lists :kekw:</span></p>
+           
+      
+        </div>
+
+        <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
+            <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
+                <header class="mb-4 lg:mb-6 not-format">
+                    <h1 class=" mt-7 mb-4 text-1xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Second Solution:</h1>
+                    <h3 class="mt-7 text-lg" "><span style="color: #7a04eb;">Method:</span>Divide and Conquer</h3>
+                    <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Time Complexity:</span> O(n log k), where n is the total number of nodes in all the input linked lists and k is the number of input linked lists. This is because the helper function uses a divide and conquer strategy to merge the linked lists in a balanced way, splitting the input lists into halves and recursively merging the halves until only one merged list remains.</h3>
+                    <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Space Complexity :</span> O(log k) due to the use of recursion in the helper function. This is because each recursive call to the helper function adds a new call stack frame to the stack, which requires additional memory</h3>
+                </header>
+          
+                <figure><img src="mergeksortsolution2.png" alt="">
+                    <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Method Explanation:</span> </h3>
+                </figure>
+
+                <h2> It involves breaking down a large problem into smaller sub-problems, solving them recursively, and then combining the solutions to solve the larger problem.               </h2>
+                <img class="w-full max-h-fit hidden dark:block" src="divideandconquer.webp" alt="dashboard image">
+
+
+                <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
+                <p class="mt-1">This function called `merge` takes in two linked lists, left and right,</p>
+                <p class="pt-3" >The first if statement checks if left is null. If it is, then we can simply return right </p>
+                <p class="mt-3">The second if statement checks if right is null. If it is, then we can simply return left</p>
+                <p class="mt-3">The third if statement checks if the value of the first node in left is less than the value of the first node in right. If it is, then we know that the first node in left should be the first node in the merged list. We recursively call merge with left.next and right, and set the next property of the current node in left to the result of that call. We then return left, since we know that the first node in the merged list is the first node in left. If none of the conditions are met then it is done to the right node.</p>
+               
+               
+                <p class="mt-7">The next function called `helper` takes in the parameters `lists` which are the values, `start` parameter for the beginning index and `end` for the end index.</p>
+                <p class="mt-3">The next if statement checks if `start` is equal to end. This line of code checks if the start index of the given linked list is equal to the end index. If they are equal, it means that there is only one linked list left to merge, and it returns that list. In other words, if the start and end indices are equal, there is only one list to merge, and we can return it directly without performing any further operations.</p>
+                <p class="mt-3">The second if statement checks if start is less than end. If it is, then we calculate the midpoint of the range between start and end, and recursively call helper with start, mid, and lists. We also recursively call helper with lists, mid + 1 and end . It adds 1 to the midpoint mid because we want to include the element at the index mid in the left list and start the right list at the index mid + 1. We then return the result of calling merge with the two lists returned by these recursive calls. If none of the above conditions is met, then we can simply return null.</p>
+              
+                <p class="mt-3">The Final Answer of this code is <span style="color:#ff00a0">1->1->2->3->4->4->5->6</span></p>
+                <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3>
+                <p class="mt-3"><span style="color:#ff00a0">No visualization because leetcode uses array as its linked lists :kekw:</span></p>
+               
+                <!-- <img class="w-full max-h-fit hidden dark:block" style="max-width: 50%;" src="largestrectanglevisualization2.png" alt="dashboard image"> -->
+                
+            </div>
+  </main>
+  
+
   <main class=" mt-7 pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
     <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
         <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
@@ -236,14 +313,15 @@ URL: https://flowbite.com/docs/components/typography/
             <h2>The brute force method. Brute force is a simple and straightforward method for solving problems by trying all possible solutions until a satisfactory one is found. It's like trying every single combination of a lock until you find the correct one</h2>
             <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
             <p class="mt-1">The function takes in an array. The parameter that takes it in is called heights and the `maxArea` stores the highest area achieved in the rectangle</p>
-            <p class="pt-3" >The  first for loop iterates through the whole array </p>A monotonic stack is just a normal stack, but we can push/pop the stack in certain way so that values in the stack become sorted (ascending/descending).
+            <p class="pt-3" >The  first for loop iterates through the whole array </p>
 
 
             <p class="pt-3" >The  second for loop value is set to `i` and it iterates through the whole array </p>
             <p class="pt-3" >The `min` variable is declared and its value is set to infinity, It is set to infinity because  if `min` nitialized to a value that is lower than any element in the subarray, the result may not be correct.</p>
-            <p class="pt-3" >The third for loop is set to the value of `j`. It increases if the value is lower than j. This is because if the value is lower than the current value it can continue and get teh biggest area. </p>
-            <p class="mt-3">It then gets the lowest value between min and `heights[k]</p>
+            <p class="pt-3" >The third for loop is k is set to the value of `j`. It increases if the value is lower than j. This is because if the next value is lower than the current value it can continue and get the biggest area.</p>
+            <p class="mt-3">It then gets the lowest value between min and `heights[k]. min is used to keep track of the minimum height in the current subarray being considered.</p>
             <p class="mt-3">It will then get the area by `min * ((j - i) + 1);`. It  is `+1`  because we are adding 1 to the width, because we need to include the current bar being considered. </p>
+            <p class="mt-3">It will then get the area by `min * ((j - i) + 1);`. It is `+1` because we are adding 1 to the width and need to include the current bar being considered.</p>
             <p class="mt-3">Then it uses Math.max()` to return the highest value between `maxArea and area`</p>
             <p class="mt-3">The Final Answer of this code is <span style="color:#ff00a0">10</span></p>
             <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3>
@@ -274,18 +352,17 @@ URL: https://flowbite.com/docs/components/typography/
 
                 <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
                 <p class="mt-1">The function takes in a parameter called heights</p>
-                <p class="pt-3" > `0` is then pushed into the array. This is done because the algorithm works by pushing elements onto a stack, and we need to ensure that the stack is emptied at the end of the algorithm. By adding a zero to the end of the heights array, we ensure that the stack will be emptied after processing all of the original heights. </p>
+                <p class="pt-3" >`0` is then pushed into the array. This is done because the algorithm works by pushing elements onto a stack, and we need to ensure that the stack is emptied at the end of the algorithm. By adding a zero to the end of the heights array, we ensure that the stack will be emptied after processing all of the original heights.</p>
                 <p class="mt-3">An empty array is declared to the variable name `stack`. This is used in the stack algorithm</p>
                 <p class="mt-3">An array called `res` is declared to a Value of 0. Res will update and return the Highest area in the Algorithm.</p>
                 <p class="mt-3">A for loop is declared and iterates through the whole variable with a value of `i`</p>
                 <p class="mt-3">A variable called `heightStart` is then declared with the value of i. This is to keep track of the index in the array.</p>
-                <p class="mt-3">Then a  while loop is declared. It is only executed if the stack is not empty, and the last element of the stack is bigger than heights[i]. For example: 6 is bigger than 2 and then 5 is bigger than 2 so the while loop will execute. This is used to stop the max area that it can calculate since the next iterated number is smaller.</p>
-                <p class="mt-3">Then the stack is destructured to the value called `[pos, height]` and popped</p>
-                <p class="mt-3">It then gets the max value between the current `res` and between (i-pos) times height. We are using this formula because i is on the  index on where it has started and pos is the current index of where the area is being stop calculated. This is to get the width of the area. The formula to get area is HEIGHT X WIDTH</p>
-                <p class="mt-3">the if statement checks the current index is bigger then or equal to  k. If it is push the first element of the first index of `q` into results. The if statement checks if the current window has k elements. If it does, it means that the window is full and we can add the maximum element</p>
+                <p class="mt-3">Then a while loop is declared. It is only executed if the stack is not empty, and the last element of the stack is bigger than heights[i]. For example: 6 is bigger than 2 and then 5 is bigger than 2 so the while loop will execute. This is used to stop the max area that it can calculate since the next iterated number is smaller.</p>
+                <p class="mt-3">Then the stack is destructured to the value called `[pos, height]` and popped  </p>
+                <p class="mt-3">It then gets the max value between the current `res` and between (i-pos) times height. We are using this formula because i is on the index on where it has started and pos is the current index of where the area is being stop calculated. This is to get the width of the area. The formula to get area is HEIGHT X WIDTH</p>
                 <p class="mt-3">`heightStart` is then assigned to `pos` so the next iteration will start at that index.</p>
                 <p class="mt-3">If the while loop is not executed then it will push the index `i` and the index number in the array heights[i] into stack.</p>
-                <p class="mt-3">The Final Answer of this code is <span style="color:#ff00a0"></span></p>
+                <p class="mt-3">The Final Answer of this code is <span style="color:#ff00a0">1->1->2->3->4->4->5->6</span></p>
                 <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3>
                
                 <img class="w-full max-h-fit hidden dark:block" style="max-width: 50%;" src="largestrectanglevisualization2.png" alt="dashboard image">
@@ -293,114 +370,31 @@ URL: https://flowbite.com/docs/components/typography/
             </div>
   </main>
 
-  <main class=" mt-7 pt-8 pb-16 lg:pt-16 lg:pb-24 bg-white dark:bg-gray-900">
-    <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
-        <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-            <header class="mb-4 lg:mb-6 not-format">
   
-                <h1 class=" underline underline-offset-4 mb-4 text-3xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Leetcode 23. Merge k Sorted Lists   </h1>
-                <h1 class="mb-4 text-1xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">First Solution:</h1>
-                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;"> Method:</span> Merge Sort</h3>
-                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Time Complexity:</span>  O(N log k), where N is the total number of nodes in all linked lists and k is the number of linked lists </h3>
-                <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Space Complexity :</span>O(k), where k is the number of linked lists. This is because the code creates a new node for each merged node, which adds up to a total of k nodes.</h3>
-            </header>
+  
+  
+  <footer class="bg-white rounded-lg  sm:flex sm:items-center sm:justify-between p-4 sm:p-6 xl:p-8 dark:bg-gray-800" style="background-color: #7700a6;">
+    <p class="mb-4 text-sm text-center text-gray-500 dark:text-gray-400 sm:mb-0" style="color: #defe47;">
+      Made by Tareef 
+    </p>
+    <div class="flex justify-center items-center space-x-1" >
+     
       
-            <figure><img src="mergeklistssolution1.png" alt="">
-                <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Method Explanation:</span> </h3>
-            </figure>
-            <h2>Merge sort is a divide-and-conquer algorithm that sorts an array by dividing it into two halves, sorting each half recursively, and then merging the two sorted halves into one sorted array.</h2>
-            <img class="w-full max-h-fit hidden dark:block" src="mergesort.gif" alt="dashboard image">
-           
-            <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
-            <p class="mt-1">We  make a function called mergeKlists that takes in `lists` as its parameter.</p>
-            <p class="mt-1">A variable called `previous` is assigned to a value which is null. This is to keep tracked of the merged linked list</p>
-            <p class="mt-1">Then a for loop is declared to loop through the merged linked lists.</p>
-            <p class="mt-1">For each linked lists we call the function `mergeTwolists` passing in the previous linked list and the curent linked list as the arguement</p>
-            <p class="mt-1">After merging all the linked lists we return previous.</p>
-            <p class="mt-3">Now we take the `mergeTwoLists` function that takes in two linked lists. `list1` and `list2,</p>
-            <p class="mt-1">Then we create ListNode with a value of 0. This will act as a sentinel node, which is a common technique used when working with linked lists. A sentinel tracks the of the front of the list and the tail trackes the last values.</p>
-            <p class="mt-1">After that we declare a while loop to iterate through both lists and adding nodes to the new linked lists in a correct order. This while loop runs as long as both list1 and list2 have nodes that haven't been added to the new list yet.</p>
-            <p class="mt-1">Inside the loop, we check which of the two lists has the smaller first value. We do this by comparing the .val property of the first node in each list.</p>
-            <p class="mt-1">Then the first `If statement` checks if If list1 has the smaller value (or if the two values are equal), we add the first node from list1 to the new list and advance the pointer for list1 to the next node.</p>
-            <p class="mt-1">Then the second `else statement` returns if  list2 has the smaller value, we add the first node from list2 to the new list and advance the pointer for list2 to the next node.            </p>
-            <p class="mt-1">After adding a node to the new list, we advance the pointer for tail to the next node in the new list.            </p>
-            <p class="mt-1">Once the loop is finished, we add any remaining nodes from list1 or list2 to the end of the new list.            </p>
-           <p class="mt-1">Then we return the new linked list</p>
-           
-            <p class="mt-3"> The Final Answer of this code is <span style="color:#ff00a0">1->1->2->3->4->4->5->6
-            </span></p>
-            <!-- <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3>
-           
-            <img class="w-full max-h-fit hidden dark:block"  style="max-width: 50%;"src="largestrectanglesolution1visualization.png" alt="dashboard image">
-             -->
-        </div>
-
-        <div class="flex justify-between px-4 mx-auto max-w-screen-xl ">
-            <article class="mx-auto w-full max-w-2xl format format-sm sm:format-base lg:format-lg format-blue dark:format-invert">
-                <header class="mb-4 lg:mb-6 not-format">
-                    <h1 class=" mt-7 mb-4 text-1xl font-extrabold leading-tight text-gray-900 lg:mb-6 lg:text-4xl dark:text-white">Second Solution:</h1>
-                    <h3 class="mt-7 text-lg" "><span style="color: #7a04eb;">Method:</span> Monotonic Stack</h3>
-                    <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Time Complexity:</span> O(n) where n is the number of elements in the input array nums.</h3>
-                    <h3 class="mt-3 text-lg" "><span style="color: #7a04eb;">Space Complexity :</span>O(n) because it uses a stack data structure that can hold at most n elements in the worst case, where n is the length of the heights array.</h3>
-                </header>
-          
-                <figure><img src="largestrectanglesolution2.png" alt="">
-                    <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Method Explanation:</span> </h3>
-                </figure>
-
-                <h2>The Monotonic Stack. Is a Stack. What is a Stack? A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first.
-                    Monotonic stack is like a regular stack with one key distinction in the push operation: Before we push a new element onto the stack, we first check if adding it breaks the monotonic condition. If it does, then we pop the top element off the stack until pushing the new element no longer breaks the monotonic condition.                </h2>
-                <img class="w-full max-h-fit hidden dark:block" src="stack.webp" alt="dashboard image">
-
-                <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Monotonic Stack:</span> </h3>
-                <img class="w-full max-h-fit hidden dark:block" src="monostack.gif" alt="dashboard image">
-
-                <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Code Explanation:</span> </h3>
-                <p class="mt-1">The function takes in a parameter called heights</p>
-                <p class="pt-3" > `0` is then pushed into the array. This is done because the algorithm works by pushing elements onto a stack, and we need to ensure that the stack is emptied at the end of the algorithm. By adding a zero to the end of the heights array, we ensure that the stack will be emptied after processing all of the original heights. </p>
-                <p class="mt-3">An empty array is declared to the variable name `stack`. This is used in the stack algorithm</p>
-                <p class="mt-3">An array called `res` is declared to a Value of 0. Res will update and return the Highest area in the Algorithm.</p>
-                <p class="mt-3">A for loop is declared and iterates through the whole variable with a value of `i`</p>
-                <p class="mt-3">A variable called `heightStart` is then declared with the value of i. This is to keep track of the index in the array.</p>
-                <p class="mt-3">Then a  while loop is declared. It is only executed if the stack is not empty, and the last element of the stack is bigger than heights[i]. For example: 6 is bigger than 2 and then 5 is bigger than 2 so the while loop will execute. This is used to stop the max area that it can calculate since the next iterated number is smaller.</p>
-                <p class="mt-3">Then the stack is destructured to the value called `[pos, height]` and popped</p>
-                <p class="mt-3">It then gets the max value between the current `res` and between (i-pos) times height. We are using this formula because i is on the  index on where it has started and pos is the current index of where the area is being stop calculated. This is to get the width of the area. The formula to get area is HEIGHT X WIDTH</p>
-                <p class="mt-3">the if statement checks the current index is bigger then or equal to  k. If it is push the first element of the first index of `q` into results. The if statement checks if the current window has k elements. If it does, it means that the window is full and we can add the maximum element</p>
-                <p class="mt-3">`heightStart` is then assigned to `pos` so the next iteration will start at that index.</p>
-                <p class="mt-3">If the while loop is not executed then it will push the index `i` and the index number in the array heights[i] into stack.</p>
-                <p class="mt-3">The Final Answer of this code is <span style="color:#ff00a0"></span></p>
-                <h3 class="mt-5 text-lg" style="color: #7a04eb;"><span style="color: #ff00a0;">Visualization:</span> </h3>
-               
-                <img class="w-full max-h-fit hidden dark:block" style="max-width: 50%;" src="largestrectanglevisualization2.png" alt="dashboard image">
-                
-            </div>
-  </main>
-  
-  
-  
-  
+      <a href="#" data-tooltip-target="tooltip-github" class="inline-flex justify-center p-2 text-gray-500 rounded-lg cursor-pointer dark:text-gray-400 dark:hover:text-white hover:text-gray-900 hover:bg-gray-100 dark:hover:bg-gray-600" >
+          <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" style="color: #defe47;">
+              <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"clip-rule="evenodd" />
+          </svg>
+          <span class="sr-only">Github</span>
+      </a>
+      <div id="tooltip-github" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-sm font-medium text-white bg-gray-900 rounded-lg shadow-sm opacity-0 transition-opacity duration-300 tooltip dark:bg-gray-700">
+          Star us on GitHub
+          <div class="tooltip-arrow" data-popper-arrow></div>
+      </div>
+  </div>
+  </footer>
 
   
 
-              <div id="contact">
-                 <h1>Solutions.</h1> 
-                 <form>
-                     <input type="text" placeholder="name" required>
-                     <input type="email" placeholder="email" required><br>
-                     <textarea placeholder="your message" required rows="5"></textarea><br>
-                     <button class="btn_one">send</button>
-                 </form> 
-                 <div id="details">
-                    <a class="btn_social"><i class="fas fa-phone"></i></a>
-                    <a class="btn_social"><i class="fas fa-at"></i></a>
-                    <a class="btn_social"><i class="fab fa-twitter"></i></a>
-                    <a class="btn_social"><i class="fab fa-dribbble"></i></a>
-                 </div>   
-             </div>
-    </div>
-    <div id="footer">
-        made on earth by a human <br><br> <a href="https://imfunniee.github.io">imfunniee</a>
-    </div>
 <script src="index.js" type="text/javascript"></script>
 <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
 </body>
